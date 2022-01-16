@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Mod</title>
+    <link rel="stylesheet" href="style-request-mod.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--Awal Navbar-->
+    <h1><a href="index.html">F1 Game Mod Center</a></h1>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Download Index.html">Downloads</a>
+                    <div class="sub_menu">
+                        <div class="col">
+                            <img src="Images/2020 Logo.jpg" alt="Logo Mod 2020">
+                            <p>F1 2020 Mod</p>
+                        </div>
+                        <div class="col">
+                            <img src="Images/2021 Logo.png" alt="Logo Mod 2021">
+                            <p>F1 2021 Mod</p>
+                        </div>
+                        <div class="col">
+                            <img src="Images/Equipment.jpg" alt="Logo Mod 2021">
+                            <p>F1 Game Mod Equipment</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Request Mod</a></li>
+                <li><a href="#" class="notifikasi">Notifikasi</a></li>
+
+                <li><a href="Acoount.html" class="account">account</a></li>
+            </ul>
+            <div class="box-Container">
+                <table class="ElementContainer">
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Search" class="search">
+                        </td>
+                        <td>
+                            <a href="#"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--Akhir Navbar-->
+
+    <!--Konten-->
+    <div class="konten">
+        <div class="isi-konten">
+            <button id="myBtn" class="myBtn">Pilih Paket Request</button>
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="pilihan">
+                        <p>Paket Full Package : <br>
+                            &ensp;1. Car Livery <br>
+                            &ensp;2. Drivers Suit <br>
+                            &ensp;3. Drivers Apparels <br>
+                            &ensp;4. Team Racing Suit <br>
+                            &ensp;5. Team Apparels <br>
+                            Rp 150,000
+                            <button class="button-slct">Select</button>
+                        </p>
+                  </div>
+                  <div class="pilihan">
+                        <p>Paket Racing Simple: <br>
+                            &ensp;1. Car Livery <br>
+                            &ensp;2. Drivers Suit <br>
+                            &ensp;3. Drivers Apparels <br>
+                            Rp 100.000
+                            <button class="button-slct-2">Select</button>
+                        </p>
+                    </div>
+                    <div class="pilihan">
+                        <p>Paket Super Simple: <br>
+                            &ensp;1. Car Livery <br>
+                            Rp 50.000
+                            <button class="button-slct-3">Select</button>
+                        </p>
+                    </div>
+                    <div class="pilihan">
+                        <p>Paket Drivers : <br>
+                            &ensp;1. Drivers Suit <br>
+                            &ensp;2. Drivers Apparels <br>
+                            Rp 50.000
+                            <button class="button-slct-3">Select</button>
+                        </p>
+                    </div>
+                    <div class="pilihan">
+                        <p>Paket Team : <br>
+                            &ensp;1. Team Racing Suit <br>
+                            &ensp;2. Team Apparels <br>
+                            Rp 50.000
+                            <button class="button-slct-3">Select</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="myBtn" class="myBtn">Kirimkan Referensi</button>
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                    <div class="pilihan2">
+                        <p style="text-align: center; font-size: 35px;">Upload File</p>
+                        <button class="button-upload"><img src="https://img.icons8.com/material-outlined/24/000000/upload--v2.png" style="width: 85px;"/></button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="myBtn" class="myBtn">Alamat Pengiriman</button>
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                    <div class="isian-alamat">
+                        <p style="text-align: center; font-size: 35px;">Alamat Email</p>
+                        <form action="POST">
+                            <input type="email" placeholder="Tuliskan Alamat Email dengan Benar" class="input">
+                            <br>
+                            <input type="submit" value="Simpan" class="button-send">
+                            <input type="reset" value="Reset" class="button-reset">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="total-harga">
+                <h2>Total Harga</h2>
+                <div class="kotak">
+                    <p class="harga">Rp 150.000</p>
+                </div>
+            </div>
+
+            
+            <button id="myBtn" class="myBtn" style="margin-left: 520px; margin-top: 20px;">Pilih Pembayaran</button>
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                    <div class="menu-bayar">
+                            <div class="pembayaran">
+                                <img src="https://img.icons8.com/external-itim2101-lineal-itim2101/64/000000/external-transfer-fintech-itim2101-lineal-itim2101.png"/> <br>
+                                Transfer Bank
+                            </div>
+                            <div class="pembayaran">
+                                <img src="images-pembayaran/Ovo.png"/> <br>
+                                OVO Payment
+                            </div>
+                            <div class="pembayaran">
+                                <img src="images-pembayaran/Dana.png"/> <br>
+                                DANA Wallet
+                            </div>
+                            <div class="pembayaran">
+                                <img src="images-pembayaran/Shoppe Pay.png"/> <br>
+                                Shoppe Pay
+                            </div>
+                            <div class="pembayaran">
+                                <img src="images-pembayaran/Paypal.png"/> <br>
+                                Paypal
+                            </div>
+                            <div class="pembayaran">
+                                <img src="images-pembayaran/Gopay pay.png"/> <br>
+                                Gopay
+                            </div>
+                            <div class="pembayaran">
+                                <img src="images-pembayaran/Qr Ris.png"/> <br>
+                                QRIS Payment
+                            </div>
+                            <div class="pembayaran">
+                                <img src="images-pembayaran/Indomaret.png"/> <br>
+                                Bayar di Indomaret
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="button-akhir">
+                <button class="Btn-akhir-buat">Buat Pesanan</button>
+                <button class="Btn-akhir-reset">Reset Pesanan</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="modal.js"></script>
+    <br>
+    <footer>
+        <hr>
+        <br>
+        <p style="text-align: center;"><b>Copyright @2022 Tugas Akhir Pemrograman Web</b></p>
+        <br>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    padding: 5px;
+    margin: 5px;
+    display: block;
+    box-sizing: border-box;
+    background: linear-gradient(to right,#00dbde,#fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body{
+    background: #e7e7e9;
+
+}
+.wrapper{
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    height: 60px;
+}
+.menu ul{
+    width: 100%;
+    height: 100%;
+    background: #4169e1;
+    text-align: left;
+    line-height: 60px;
+    position: relative;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 12px;
+    float: left;
+}
+.menu ul li:hover{
+    background: rgb(69, 114, 248);
+    font-size: 14px;
+}
+.menu ul li:hover a{
+    color: orange;
+    font-size: 13px;
+}
+.menu ul li .sub_menu{
+    position: absolute;
+    background: royalblue;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 24px;
+    visibility: hidden;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    transform: translateY(-3em);
+    z-index: -1;
+}
+.menu ul li .sub_menu .col img {
+    width: 250px;
+    height: 180px;
+    display: block;
+}
+.menu ul li:hover .sub_menu{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.1s;
+}
+.menu ul li .sub_menu p{
+    color: white;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.box-Container {
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    width: 300px;
+    height: 42px;
+    border: 4px solid #4169e1;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+.ElementContainer{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.search{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #424242;
+    font-weight: 500;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+.konten{
+    margin-top: 80px;
+}
+.isi-konten{
+    margin: auto;
+    padding: 30px;
+}
+.myBtn{
+    width: 400px;
+    height: 70px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: auto 40px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .button-slct{
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    margin-top: -80px;
+    margin-left: 100px;
+  }
+  .pilihan{
+      margin-top: 5px;
+      padding: 10px;
+      border: 2px solid gray;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      max-width: 700px;
+  }
+  .button-slct-2{
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    margin-top: -70px;
+    margin-left: 100px;
+  }
+  .button-slct-3{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    margin-top: -40px;
+    margin-left: 100px;
+  }
+  .pilihan2{
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid gray;
+    max-width: 700px;
+    text-align: center;
+  }
+  .button-upload{
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .input{
+    width: 300px;
+    height: 30px;
+    border-radius: 105px;
+    margin-left: 200px;
+    text-align: center;
+  }
+  .isian-alamat{
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid gray;
+}
+.button-send{
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    background-color: #00FF2D;
+    cursor: pointer;
+    margin-left: 270px;
+}
+.button-reset{
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    background-color: #F73415 ;
+    cursor: pointer;
+}
+.kotak{
+    width: 300px;
+    height: 60px;
+    background: #C4C4C4;
+    border-radius: 105px;
+    margin-top: 15px;
+    padding: 10px;
+    margin-left: 560px;
+}
+h2{
+    text-align: center;
+    margin-left: -50px;
+    margin-top: 25px;
+    font-size: 30px;
+}
+.harga{
+    font-size: 30px;
+    text-align: center;
+}
+.menu-bayar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.pembayaran{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+.pembayaran img{
+    width: 50%;
+    align-content: center;
+    margin-left: 10px;
+}
+.Btn-akhir-buat{
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: auto 10px;
+    background-color: #00FF2D;
+}
+.Btn-akhir-reset{
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: auto 10px;
+    background-color: #F73415 ;
+}
+.button-akhir{
+    text-align: center;
+    margin-left: -40px;
+    margin-top: 20px;
+}
